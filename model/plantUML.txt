@@ -1,0 +1,22 @@
+@startuml
+class Toy{
+  allMyToys
+  name
+  color
+  cost
+  getToy()
+  addToy()
+
+}
+
+
+class ToyBox{
+  allMyToys
+  name
+  getToys()
+  sortToys()
+
+}
+
+
+@enduml

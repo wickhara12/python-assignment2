@@ -1,0 +1,31 @@
+@startuml
+dummy <|-- ToyBox 
+
+class dummy{
+  name
+  color
+  cost
+  addToy()
+
+}
+ToyBox o-- allMyToys
+class ToyBox{
+  allMyToys
+  name
+  getToys()
+  sortToys()
+
+}
+
+class allMyToys{
+
+name
+
+
+
+}
+
+
+
+
+@enduml
