@@ -1,0 +1,61 @@
+## task one: identifying the worst smell ###
+
+the worst smell based on what we discussd in class was duplicated code.
+the reason why i think that 'duplicated code' is the worst smell is because it can cause methods and classes to become longer than it should be
+and you are repeating the same code instead of using a method that can call the code when it needed.
+I also think that people used duplicated code because they have ran over time and had to reuse the same code because it already works
+or they don't know how to use refactoring or other ways to create code without repeating the same code.
+
+
+## Step by Step of refactoring our bad smell ##
+
+
+Switch case: 
+V1: Is old version before it begain refactoring
+V2: deleting unwanted files that doesn't need to be in the menu
+V3: adding class to the file so it better formatted, 
+	deleted the print statements and add the info to the input. ## avoids duplication code##
+V4: extract the methods so that only the if statement can called the info, 
+	change the method name from start_menu to user_input 
+	Still has if statement but it only three conditions instead of seven.
+
+DID YOU GET RID OF BAD SMELL ??? / WHY???
+the answer is no because I still got if statements in my method however it not as bad as version one	
+and i made my method smaller
+
+
+Long Methods:
+V1: the old version of the uml_decoder method that has 20 lines of code; when testing still running correctly
+V2: move the attributes to def __init__ method 
+	the uml_decoder method now has 16 lines of code.  when testing it no longer work
+V3: add self to the code that was stopping the program from working. now works when testing
+V4: add a new method call class_check and put some of the code in there.
+	deleted unwanted code in else if statement and add the class_check method instead
+	the program still works when testing
+	the code in uml_decoder is now 10 lines which is the limit of what is acceptable method lenght
+
+
+DID YOU GET RID OF BAD SMELL ??? / WHY???	
+the answer is yes, I did managed to get rid of the bad smell. but there are new bad smells.
+ in the uml_decoder method, it is the switch case because it got too many if statement.
+ and I now have a long class but it will be change when i do the duplication code for this class.
+
+
+ 
+Duplication code
+V1: old version showing the same duplicated code
+V2: adding the remove_list to __init__ method 
+	still haven't change anything in uml_class / uml_method or uml_attribute
+V3: add self.remove_list to each of these methods and add the more objects in remove_list
+	also fixing the char_remover method because it was stopping the program from working
+V4: deleted uml_class / uml_method / uml_attribute methods 
+	and creating one method that removes everything in remove_list
+	and fixed uml_decoder method so it will work when running the program.
+
+DID YOU GET RID OF BAD SMELL ??? / WHY???
+in the end of version four, I managed to get rid of the smell. 
+this is because i made one new method that does everything instead of having it as separate methods
+it also help keep the size of class down, so it doesn't become a bad smell. 
+	
+
+	
